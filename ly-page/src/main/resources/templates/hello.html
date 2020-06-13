@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+msg:<span th:text="${msg}"></span>
+<br>cache false
+
+<!--user:<span th:text="${user}"></span>-->
+<!--<br>-->
+<!--user.friend:<span th:text="${user.getFriend()}"></span>-->
+
+<br>
+<span th:text="'<font color=\'red\'>hello</font>'"></span>
+<br>
+<span th:utext="'<font color=\'red\'>hello</font>'"></span>
+<br>
+<span th:text="${#dates.format(#dates.createNow())}"></span>
+<br>
+<span th:text="100 * 200"></span>
+<br>
+
+<ul>
+    <li th:each="user : ${users}">
+        <span th:text="${user}"></span>
+    </li>
+</ul>
+<script th:inline="javascript">
+    const users = /*[[${users}]]*/ [];
+    for (let k in users){
+        console.log(users[k]);
+    }
+</script>
+
+</body>
+</html>

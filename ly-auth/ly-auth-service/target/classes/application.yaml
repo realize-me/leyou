@@ -1,0 +1,17 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: auth-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
+ly:
+  jwt:
+    secret: leyou
+    pubKeyPath: C:\Users\Lenovo\Desktop\master\spring_zg2_demo\id_rsa.pub
+    priKeyPath: C:\Users\Lenovo\Desktop\master\spring_zg2_demo\id_rsa.pri
+    expire: 30
+    cookieName: LY_TOKEN

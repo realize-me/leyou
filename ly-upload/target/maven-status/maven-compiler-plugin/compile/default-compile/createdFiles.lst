@@ -1,0 +1,5 @@
+com\leyou\upload\web\UploadController.class
+com\leyou\upload\service\UploadService.class
+com\leyou\config\UploadProperties.class
+com\leyou\config\FastDFSImporter.class
+com\leyou\LyUploadApplication.class

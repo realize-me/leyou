@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.leyou.page.service.PageServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 178.594 s <<< FAILURE! - in com.leyou.page.service.PageServiceTest
+createHtml  Time elapsed: 6.049 s  <<< ERROR!
+java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: item-service
+	at com.leyou.page.service.PageServiceTest.createHtml(PageServiceTest.java:19)
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: item-service
+	at com.leyou.page.service.PageServiceTest.createHtml(PageServiceTest.java:19)
+

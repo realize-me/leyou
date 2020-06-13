@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.leyou.search.client.CategoryClientTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 62.065 s - in com.leyou.search.client.CategoryClientTest
